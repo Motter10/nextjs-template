@@ -1,6 +1,10 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
+function MyComponent(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -10,7 +14,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1>Hello World!</h1>
+        <MyComponent name="Sandro Motter" />
       </main>
 
       <footer className={styles.footer}>
